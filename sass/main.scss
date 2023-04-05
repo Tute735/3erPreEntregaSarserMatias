@@ -36,14 +36,16 @@ body {
 
 .navbar {
   background-color: $black;
+
+
+  .nav-link:hover {
+    color: $black !important;
+    background-color: $white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
 }
 
-.nav-link:hover {
-  color: $black !important;
-  background-color: $white;
-  border-radius: 10px;
-  transition: 0.5s;
-}
 
 .btn-sign {
   padding: 10px;
@@ -78,10 +80,10 @@ body {
   box-shadow: 0 0 5px 0 rgba(22, 22, 26, .25);
   transition: 0.5s;
 
-  &:hover {
-    box-shadow: 5px 5px 20px $black;
-    transform: translateY(-2%);
-  }
+    &:hover {
+      box-shadow: 5px 5px 20px $black;
+      transform: translateY(-2%);
+    }
 }
 
 .btn-card {
@@ -404,52 +406,52 @@ body {
       }
     }
 
-    &__list {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    }
+        &__list {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        }
     
-    .cont-lista {
-    margin: 10px;
-    }
-    }
+          .cont-lista {
+          margin: 10px;
+          }
+          }
     
     /* Venta Producto */
     .venta {
     display: flex;
     
-    img {
-    width: 100%;
-    border: $black 3px solid;
-    }
+      img {
+      width: 100%;
+      border: $black 3px solid;
+        }
     
     .infopro {
     display: inline-block;
     width: 100%;
-    h1 {
-        font-size: 3vw;
-        display: flex;
-        justify-content: center;
-        text-decoration: underline;
-      }
-      
-      h2 {
-        display: flex;
-        justify-content: center;
-        font-size: 2.5vw;
-      }
+        h1 {
+            font-size: 3vw;
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+          }
+          
+          h2 {
+            display: flex;
+            justify-content: center;
+            font-size: 2.5vw;
+          }
       
       .tallespro {
         display: flex;
         justify-content: center;
         padding-top: 80px;
         
-        input {
-          width: 50px;
-          height: 40px;
-          margin: 5px;
-        }
+            input {
+              width: 50px;
+              height: 40px;
+              margin: 5px;
+            }
       }
       
       .compra {
@@ -457,30 +459,30 @@ body {
         justify-content: center;
         padding-top: 90px;
         
-        input {
-          width: 300px;
-          height: 50px;
-          color: $white;
-          background-color: $black;
-          margin: 100px;
-        }
-      }
-      
-      h3 {
-        font-size: 2.2vw;
-        text-decoration: underline;
-        display: flex;
-        justify-content: center;
-      }
-      
-      p {
-        font-size: 2vw;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        width: 100%;
-      }
-    }
+            input {
+              width: 300px;
+              height: 50px;
+              color: $white;
+              background-color: $black;
+              margin: 100px;
+            }
+            }
+            
+            h3 {
+              font-size: 2.2vw;
+              text-decoration: underline;
+              display: flex;
+              justify-content: center;
+            }
+            
+            p {
+              font-size: 2vw;
+              justify-content: center;
+              align-items: center;
+              display: flex;
+              width: 100%;
+            }
+          }
 
     .tablatalles {
     display: flex;
